@@ -1032,12 +1032,16 @@ button:focus {
 /* ==========================================================================
    team section
    ========================================================================== */
+
 #team .single-team {
   border: 1px solid #ddd;
   position: relative;
   -moz-transition: all .8s ease;
   -webkit-transition: all .8s ease;
-  transition: all .8s ease; }
+  transition: all .8s ease; 
+  min-height: 410px;          
+  height: 100%;
+}
   #team .single-team img {
     width: 100%; }
   #team .single-team .team-social-icons {
@@ -1459,3 +1463,66 @@ button:focus {
       -webkit-transition: all 300ms;
       -o-transition: all 300ms;
       transition: all 300ms; }
+
+/* ====== (service-terms) ====== */
+.service-terms-header {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.service-terms-header img {
+  width: 160px;
+  margin-bottom: 20px;
+}
+.service-terms-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 40px 32px;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+}
+.service-terms-container h1 {
+  color: #2b2e4a;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+}
+.service-terms-container ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+.service-terms-container li {
+  margin-bottom: 8px;
+  list-style: disc;
+  color: #5e629c;
+  font-size: 15px;
+}
+.service-terms-container p {
+  color: #5e629c;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.service-terms-btn {
+  background: #45B7A8;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 32px;
+  border: none;
+  transition: background 0.2s;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(108,99,255,0.08);
+  margin-top: 24px;
+  display: inline-block;
+  text-decoration: none;
+}
+.service-terms-btn:hover {
+  background: #2b2e4a;
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .service-terms-container {
+    padding: 20px 8px;
+  }
+}
